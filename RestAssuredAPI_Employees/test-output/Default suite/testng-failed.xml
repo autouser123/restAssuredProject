@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.employee.testcases.TC_002_GET_Single_Record">
+        <methods>
+          <include name="checkStatusCode"/>
+          <include name="checkResponseTime"/>
+          <include name="testSetup"/>
+          <include name="checkResponse"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+          <include name="checkStatusLine"/>
+        </methods>
+      </class> <!-- com.employee.testcases.TC_002_GET_Single_Record -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

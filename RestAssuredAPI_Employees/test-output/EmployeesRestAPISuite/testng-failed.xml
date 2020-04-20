@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeesRestAPISuite]">
+  <test thread-count="5" name="EmployeesRestAPISuite(failed)">
+    <classes>
+      <class name="com.employee.testcases.TC_001_GET_ALL_Employee">
+        <methods>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+          <include name="checkStatusCode"/>
+          <include name="checkContentLenght"/>
+        </methods>
+      </class> <!-- com.employee.testcases.TC_001_GET_ALL_Employee -->
+      <class name="com.employee.testcases.TC_002_GET_Single_Record">
+        <methods>
+          <include name="checkStatusCode"/>
+          <include name="testSetup"/>
+          <include name="checkResponse"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+          <include name="checkStatusLine"/>
+        </methods>
+      </class> <!-- com.employee.testcases.TC_002_GET_Single_Record -->
+      <class name="com.employee.testcases.TC_003_POST_Employee_Record">
+        <methods>
+          <include name="checkResponse"/>
+          <include name="tearDown"/>
+          <include name="checkStatusLine"/>
+          <include name="checkStatusCode"/>
+          <include name="checkResponseTime"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- com.employee.testcases.TC_003_POST_Employee_Record -->
+    </classes>
+  </test> <!-- EmployeesRestAPISuite(failed) -->
+</suite> <!-- Failed suite [EmployeesRestAPISuite] -->
